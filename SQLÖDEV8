@@ -1,0 +1,95 @@
+--test veritabanınızda employee isimli sütun bilgileri id(INTEGER), 
+--name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+CREATE TABLE employee (id SERIAL PRIMARY KEY, name VARCHAR(50) NOT NULL, birthday DATE, email VARCHAR(100));
+--Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+insert into employee (name , birthday, email) values ('Jeremie', null, null);
+insert into employee (name , birthday, email) values ('Marietta', '1936-11-07', 'mlunam1@addthis.com');
+insert into employee (name , birthday, email) values ('Eustacia', '1931-10-12', 'efarrer2@aol.com');
+insert into employee (name , birthday, email) values ('Darryl', '1943-05-07', 'dhalpine3@phoca.cz');
+insert into employee (name , birthday, email) values ('Shaine', '1974-04-29', 'slattimer4@com.com');
+insert into employee (name , birthday, email) values ('Perren', '1906-10-22', 'pboswood5@barnesandnoble.com');
+insert into employee (name , birthday, email) values ('Hadleigh', '1934-09-16', 'hbarnewelle6@google.com.hk');
+insert into employee (name , birthday, email) values ('Roseanne', null, null);
+insert into employee (name , birthday, email) values ('Alric', '1979-09-16', 'atilson8@ted.com');
+insert into employee (name , birthday, email) values ('Toinette', '1927-11-04', 'tloddy9@elegantthemes.com');
+insert into employee (name , birthday, email) values ('Florida', null, null);
+insert into employee (name , birthday, email) values ('Blair', '1978-07-08', 'bchrystalb@shinystat.com');
+insert into employee (name , birthday, email) values ('Amber', '1921-06-09', 'agildersleavesc@tripadvisor.com');
+insert into employee (name , birthday, email) values ('Dasi', null, null);
+insert into employee (name , birthday, email) values ('Elka', '1981-03-27', 'eleddiee@elegantthemes.com');
+insert into employee (name , birthday, email) values ('Morie', '1985-02-13', 'msquierf@chicagotribune.com');
+insert into employee (name , birthday, email) values ('Rosanna', '1976-06-09', 'rpedderseng@dmoz.org');
+insert into employee (name , birthday, email) values ('Otis', '1982-09-03', 'osimysonh@miibeian.gov.cn');
+insert into employee (name , birthday, email) values ('Nomi', '1951-10-07', 'nscotsbrooki@ox.ac.uk');
+insert into employee (name , birthday, email) values ('Wallie', '1967-09-04', 'wlindwallj@stanford.edu');
+insert into employee (name , birthday, email) values ('Reamonn', null, null);
+insert into employee (name , birthday, email) values ('Constantia', '1994-06-27', 'clewcockl@wordpress.org');
+insert into employee (name , birthday, email) values ('Sawyer', '1961-02-06', 'sgossm@yahoo.com');
+insert into employee (name , birthday, email) values ('Garek', '1965-12-21', 'gocannonn@com.com');
+insert into employee (name , birthday, email) values ('Agnesse', '1963-11-20', 'awingeato@jalbum.net');
+insert into employee (name , birthday, email) values ('Granthem', null, null);
+insert into employee (name , birthday, email) values ('Carola', '1968-04-05', 'cfrancesconeq@tinyurl.com');
+insert into employee (name , birthday, email) values ('Joyan', '1915-03-28', 'jlyngstedr@independent.co.uk');
+insert into employee (name , birthday, email) values ('Yard', '1988-07-10', 'yrounsefells@netscape.com');
+insert into employee (name , birthday, email) values ('Xaviera', '1913-06-18', 'xhellsdont@yahoo.co.jp');
+insert into employee (name , birthday, email) values ('Florida', null, null);
+insert into employee (name , birthday, email) values ('Brandy', '1982-10-25', 'boattesv@time.com');
+insert into employee (name , birthday, email) values ('Wilow', '1944-09-20', 'wfoulisw@163.com');
+insert into employee (name , birthday, email) values ('Arvie', '1978-09-13', 'abufferyx@nasa.gov');
+insert into employee (name , birthday, email) values ('Maureene', '1965-07-31', 'mcollobyy@yolasite.com');
+insert into employee (name , birthday, email) values ('Brant', '1953-11-14', 'bcluerz@smugmug.com');
+insert into employee (name , birthday, email) values ('Skylar', null, null);
+insert into employee (name , birthday, email) values ('Jacenta', null, null);
+insert into employee (name , birthday, email) values ('Cosette', '1953-03-15', 'cwissby12@google.nl');
+insert into employee (name , birthday, email) values ('Cody', '1953-06-04', 'clattey13@free.fr');
+insert into employee (name , birthday, email) values ('Eartha', '1984-05-13', 'emurra14@desdev.cn');
+insert into employee (name , birthday, email) values ('Eleen', '1944-10-15', 'eputtnam15@mashable.com');
+insert into employee (name , birthday, email) values ('Abagael', '1999-12-18', 'astubs16@jugem.jp');
+insert into employee (name , birthday, email) values ('Justino', '1975-04-11', 'jamar17@bluehost.com');
+insert into employee (name , birthday, email) values ('Lorain', '1965-04-28', 'lcritchell18@nbcnews.com');
+insert into employee (name , birthday, email) values ('Ginnie', null, null);
+insert into employee (name , birthday, email) values ('Jayson', '1964-04-24', 'jdruel1a@ovh.net');
+insert into employee (name , birthday, email) values ('Kennan', '1917-09-29', 'ktansill1b@bigcartel.com');
+insert into employee (name , birthday, email) values ('Owen', '1935-10-18', 'ohollibone1c@photobucket.com');
+insert into employee (name , birthday, email) values ('Wynn', null, null);
+
+--Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+UPDATE employee
+SET
+name = 'Eda AKKURT',
+birthday = '1996-08-09',
+email = 'eda@kurt.com'
+WHERE id =1;
+
+UPDATE employee
+SET
+name = 'Duygu ASLAN',
+birthday = '1987-09-07',
+email = 'duygu@aslan.com'
+WHERE id = 2;
+
+UPDATE employee 
+SET
+name = 'Ali YILMAZ',
+birthday = '1997-11-13',
+email = 'ali@yilmaz.com'
+WHERE id = 3;
+
+UPDATE employee 
+SET
+name = 'Damla KALKER',
+birthday = '1985-12-12',
+email = 'damla@kalker.com'
+WHERE id = 4;
+
+UPDATe employee
+SET
+name = 'Ayşe AK',
+birthday = '1999-02-02',
+email = 'ayse@ak.com'
+WHERE id = 5;
+
+Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+DELETE FROM employee
+WHERE id IN(6,8,9,22,45);
+RETURNING *;
